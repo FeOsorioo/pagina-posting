@@ -1,0 +1,39 @@
+@import url("https://use.typekit.net/zhv1nzj.css");
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+body {
+
+  font-family: "ivyepic-variable", "arial", sans-serif;
+  background-color: #ffffff;
+}
+.double-height {
+  grid-row: span 2;
+}
+#blob {
+  clip-path: path("M0,300 Q200,400 400,300 L400,400 L0,400 Z");
+  transition: clip-path 0.5s ease;
+}
+
+
+/* ============================
+   PHONE INPUT — CUSTOM STYLE
+============================= */
+
+
+
+/* Opciones */
+.PhoneInputCountrySelect option {
+  padding: 10px !important;
+  background: #0f0f0f !important;
+  color: white !important;
+  border-radius: 6px !important;
+}
+
