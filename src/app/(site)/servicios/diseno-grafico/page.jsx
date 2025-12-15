@@ -1,25 +1,8 @@
 /**
  * @fileoverview Página de servicio: “Diseño Gráfico”.
- *
- * Este componente representa la sección dedicada al servicio de
- * **Diseño Gráfico**, parte del sitio web principal. Su propósito es
- * presentar la oferta creativa relacionada con el diseño visual, la identidad
- * de marca y la comunicación estética, utilizando componentes modulares y datos
- * dinámicos provenientes del archivo de configuración de servicios.
- *
- * La estructura general incluye:
- * - Video de fondo principal (hero section).
- * - Descripción conceptual del servicio.
- * - Navegación interna a subservicios mediante botones.
- * - Renderizado dinámico de cada subservicio.
- * - Sección de preguntas frecuentes (FAQ).
- * - Bloque final de invitación a explorar otros servicios y contactar.
- *
- * @module DisenoGrafico
  */
 
 "use client";
-
 
 /* ====== Componentes reutilizables ====== */
 import BackgroundVideo from "@ui/BackgroundVideo";
@@ -33,45 +16,25 @@ import Button from "@components/ui/Button";
 import { serviceList } from "@data/services";
 import { faqListDisenoGrafico } from "@data/FAQ";
 
-/* ====== Recursos multimedia ====== */
-import video from "@/assets/servicios/diseno_grafico/diseno_grafico_banner.mp4";
-import video_responsive from "@/assets/servicios/diseno_grafico/diseno_grafico_banner_responsive.mp4";
-
 /**
- * Componente principal `disenoGrafico`.
+ * Componente principal `DisenoGrafico`.
  *
- * Renderiza la página del servicio **Diseño Gráfico**, incluyendo contenido
- * textual, multimedia y secciones dinámicas de subservicios. Cada parte está
- * pensada para comunicar el valor del diseño visual como parte fundamental
- * de la estrategia de comunicación de una marca.
- *
- * @component
- * @example
- * return (<disenoGrafico />)
- *
- * @returns {JSX.Element} Página renderizada del servicio de Diseño Gráfico.
+ * @returns {JSX.Element}
  */
-function disenoGrafico() {
-  /**
-   * Obtiene el objeto de datos correspondiente al servicio actual desde el listado global.
-   * Contiene información general y los subservicios asociados.
-   *
-   * @type {Object}
-   */
+function DisenoGrafico() {
   const service = serviceList.find(
     (service) => service.slug === "diseno-grafico"
   );
 
   return (
     <>
-
       {/* ===== VIDEO PRINCIPAL ===== */}
       <BackgroundVideo
-        mp4Src={video}
-        mp4SrcMobile={video_responsive}
+        mp4Src="/servicios/diseno_grafico/diseno_grafico_banner.mp4"
+        mp4SrcMobile="/servicios/diseno_grafico/diseno_grafico_banner_responsive.mp4"
         hideOnMobile
         pauseWhenOffscreen
-  className="h-[50vh] md:h-[60vh] [&_video]:opacity-100 [&_video]:brightness-100"
+        className="h-[50vh] md:h-[60vh] [&_video]:opacity-100 [&_video]:brightness-100"
       />
 
       {/* ===== SECCIÓN DE INTRODUCCIÓN ===== */}
@@ -86,10 +49,10 @@ function disenoGrafico() {
 
           <p className="text-lg text-center">
             Creamos experiencias gráficas y visuales que comunican y representan
-            todo eso que tu sueñas para tu marca o proyecto.
+            todo eso que sueñas para tu marca o proyecto.
           </p>
 
-          {/* ===== SUBSERVICIOS COMO BOTONES ===== */}
+          {/* ===== SUBSERVICIOS ===== */}
           <div className="flex justify-center flex-wrap gap-4 mt-6">
             {service.subServices.map((tag) => (
               <Button
@@ -107,29 +70,29 @@ function disenoGrafico() {
         </section>
       </BackgroundWrapper>
 
-      {/* ===== RENDER DINÁMICO DE SUBSERVICIOS ===== */}
-      {service.subServices.map((service, index) => (
-        <Subservices key={index} subservice={service} index={index} />
+      {/* ===== SUBSERVICIOS ===== */}
+      {service.subServices.map((subservice, index) => (
+        <Subservices
+          key={index}
+          subservice={subservice}
+          index={index}
+        />
       ))}
 
-      {/* ===== SECCIÓN DE PREGUNTAS FRECUENTES ===== */}
+      {/* ===== FAQ ===== */}
       <FAQ faqList={faqListDisenoGrafico} />
 
-      {/* ===== BLOQUE FINAL DE CIERRE ===== */}
+      {/* ===== CIERRE ===== */}
       <section className="mx-6 md:mx-auto max-w-4xl mt-4">
-
         <h3 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
           <span className="font-bold">
-            {" "}
             Conoce <br className="hidden sm:block" />
           </span>
           <span className="font-light">más sobre</span>
         </h3>
 
-        {/* ===== SECCIÓN DE SERVICIOS RELACIONADOS ===== */}
         <Services />
 
-        {/* ===== CTA FINAL ===== */}
         <div className="flex justify-center mb-12">
           <Button href="/contacto" size="md" fullWidth={false} width="w-auto">
             Empieza a creer
@@ -140,4 +103,4 @@ function disenoGrafico() {
   );
 }
 
-export default disenoGrafico;
+export default DisenoGrafico;

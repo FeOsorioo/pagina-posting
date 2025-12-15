@@ -1,107 +1,51 @@
-//Iconos 
+// ===== ICONOS (esto SÍ se importa) =====
 import iconDiseno from "@/assets/home/diseno_grafico.webp";
 import iconDesarrollo from "@/assets/home/desarrollo_web.webp";
 import iconProduccion from "@/assets/home/produccion.webp";
 import iconEstrategia from "@/assets/home/estrategia_digital.webp";
 import iconRedes from "@/assets/home/redes_sociales.webp";
 
-//Video
-import disenografico from "@/assets/servicios/diseno_grafico.mp4";
-import redesociales from "@/assets/servicios/redes_sociales.mp4";
-import desarrolloWeb from "@/assets/servicios/desarrollo_web.mp4";
-import marketingDigital from "@/assets/servicios/marketing_digital.mp4";
-import produccionAudiovisual from "@/assets/servicios/produccion_audiovisual.mp4";
-
-// Videos diseño grafico
-import servicio_diseno_1 from "@assets/servicios/diseno_grafico/servicio_diseno_1.mp4"
-import servicio_diseno_2 from "@assets/servicios/diseno_grafico/servicio_diseno_2.mp4"
-import servicio_diseno_3 from "@assets/servicios/diseno_grafico/servicio_diseno_3.mp4"
-import servicio_diseno_4 from "@assets/servicios/diseno_grafico/servicio_diseno_4.mp4"
-import servicio_diseno_5 from "@assets/servicios/diseno_grafico/servicio_diseno_5.mp4"
-
-// Videos de produccion audiovisual
-import servicio_produccion_1 from "@assets/servicios/produccion_audiovisual/servicio_produccion_1.mp4"
-import servicio_produccion_2 from "@assets/servicios/produccion_audiovisual/servicio_produccion_2.mp4"
-import servicio_produccion_3 from "@assets/servicios/produccion_audiovisual/servicio_produccion_3.mp4"
-import servicio_produccion_4 from "@assets/servicios/produccion_audiovisual/servicio_produccion_4.mp4"
-
-// Videos de Redes Sociales
-import servicio_redes_1 from "@assets/servicios/redes_sociales/servicio_redes_1.mp4"
-import servicio_redes_2 from "@assets/servicios/redes_sociales/servicio_redes_2.mp4"
-import servicio_redes_3 from "@assets/servicios/redes_sociales/servicio_redes_3.mp4"
-import servicio_redes_4 from "@assets/servicios/redes_sociales/servicio_redes_4.mp4"
-import servicio_redes_5 from "@assets/servicios/redes_sociales/servicio_redes_5.mp4"
-
-// Videos de Desarrollo Web
-import servicio_web_1 from "@assets/servicios/desarrollo_web/servicio_web_1.mp4"
-import servicio_web_2 from "@assets/servicios/desarrollo_web/servicio_web_2.mp4"
-import servicio_web_3 from "@assets/servicios/desarrollo_web/servicio_web_3.mp4"
-import servicio_web_4 from "@assets/servicios/desarrollo_web/servicio_web_4.mp4"
-import servicio_web_5 from "@assets/servicios/desarrollo_web/servicio_web_5.mp4"
-
-
-// Videos de Marketing Digital
-import servicio_marketing_1 from "@assets/servicios/marketing_digital/servicio_marketing_1.mp4"
-import servicio_marketing_2 from "@assets/servicios/marketing_digital/servicio_marketing_2.mp4"
-import servicio_marketing_3 from "@assets/servicios/marketing_digital/servicio_marketing_3.mp4"
-import servicio_marketing_4 from "@assets/servicios/marketing_digital/servicio_marketing_4.mp4"
-import servicio_marketing_5 from "@assets/servicios/marketing_digital/servicio_marketing_5.mp4"
-
-
 export const serviceList = [
   {
     slug: "diseno-grafico",
-    title: "Diseño Gráfico",
+    title: "Diseño Gráfico",
     ctaLink: "/servicios/diseno-grafico",
-    video: disenografico,
+    video: "/servicios/diseno_grafico/diseno_grafico.mp4",
     icon: iconDiseno,
     description:
-      "Todo entra por los ojos ¿cierto? \n Creamos diseños que hacen tangible la personalidad de tu marca y la proyectan con fuerza en cada espacio (Digital o físico).",
+      "Todo entra por los ojos ¿cierto?\nCreamos diseños que hacen tangible la personalidad de tu marca.",
     subServices: [
       {
         label: "Branding",
-        description:
-          "Un logo nunca será suficiente. Creamos un sistema completo que le da identidad a sueños: colores, tipografías, tono visual y símbolos que hacen que el mundo empiece a creer en ellos también. \n  Branding que se sostiene en el tiempo y se diferencia en cualquier espacio.",
-        videoOrImage: true,
-        video: servicio_diseno_1,
-
         link: "branding",
+        videoOrImage: true,
+        video: "/servicios/diseno_grafico/servicio_diseno_1.mp4",
+        description:
+          "Creamos sistemas visuales completos que le dan identidad a los sueños.",
       },
       {
         label: "Diseño digital",
-        description:
-          "Diseñamos piezas pensadas para cada espacio online, con coherencia visual y la fuerza suficiente para destacar en medio del scroll infinito.Te ayudamos con tus redes sociales, páginas web, anuncios y publicidad digital.",
+        link: "diseno-digital",
+        video: "/servicios/diseno_grafico/servicio_diseno_2.mp4",
         videoOrImage: true,
-        video: servicio_diseno_2,
-
-        link: "diseño-digital",
       },
       {
         label: "Material POP",
-        description:
-          "Los sueños merecen conocer la calle, las vitrinas, las paredes. Diseñamos piezas que no pasan desapercibidas y logran que la gente se lleve tu nombre en la memoria… y en las manos.",
-        videoOrImage: true,
-        video: servicio_diseno_3,
-
         link: "material-pop",
+        video: "/servicios/diseno_grafico/servicio_diseno_3.mp4",
+        videoOrImage: true,
       },
       {
         label: "Ilustración",
-        description:
-          "Creemos en lo que aún no existe. Vemos formas, personajes y mundos posibles donde otros solo ven un espacio en blanco.  Creamos personajes, etiquetas y proyectos únicos que no existen en ningún banco de imágenes.",
-        videoOrImage: true,
-        video: servicio_diseno_4,
-
         link: "ilustracion",
+        video: "/servicios/diseno_grafico/servicio_diseno_4.mp4",
+        videoOrImage: true,
       },
       {
-        label: "Diseño editoral",
-        description:
-          "Un buen editorial no solo organiza páginas: cuenta una historia. Diseñamos catálogos, revistas e informes con diagramación cuidada, textos bien presentados y versiones listas para impresión o digital. Piezas que invitan a detenerse y leer.",
+        label: "Diseño editorial",
+        link: "diseno-editorial",
+        video: "/servicios/diseno_grafico/servicio_diseno_5.mp4",
         videoOrImage: true,
-        video: servicio_diseno_5,
-
-        link: "diseño-editoral",
       },
     ],
   },
@@ -110,42 +54,32 @@ export const serviceList = [
     slug: "produccion-audiovisual",
     title: "Producción Audiovisual",
     ctaLink: "/servicios/produccion-audiovisual",
-    video: produccionAudiovisual,
+    video: "/servicios/produccion_audiovisual/produccion_audiovisual.mp4",
     icon: iconProduccion,
-    description:
-      "Que se hagan realidad. Tus sueños merecen ser vistos y escuchados. Producimos contenido visual y sonoro que conecta, emociona y potencia tu presencia digital.",
     subServices: [
       {
         label: "Video",
         link: "video",
-        description:
-          "Un video puede ser el principio de todo lo que sueñas. En el mundo digital tus sueños deben ocupar las pantallas. Creamos videos corporativos, publicitarios y creativos que transmiten y se adaptan a los formatos digitales que necesites. ",
+        video: "/servicios/produccion_audiovisual/servicio_produccion_1.mp4",
         videoOrImage: true,
-        video: servicio_produccion_1,
       },
       {
         label: "Fotografía",
         link: "fotografia",
-        description:
-          "La primera impresión no tiene segundas oportunidades. Las fotografías son la primera impresión en el mundo digital. En Posting capturamos imágenes profesionales que destacan productos, servicios, personas o momentos, cuidando siempre la estética y el mensaje que quieres proyectar.",
+        video: "/servicios/produccion_audiovisual/servicio_produccion_2.mp4",
         videoOrImage: true,
-        video: servicio_produccion_2,
       },
       {
         label: "Animación",
         link: "animacion",
-        description:
-          "Cuando las ideas necesitan movimiento, entran la animación y los motion graphics. Diseñamos piezas dinámicas que simplifican conceptos complejos, sorprenden y hacen que tus proyectos se sientan y sean únicos.",
+        video: "/servicios/produccion_audiovisual/servicio_produccion_3.mp4",
         videoOrImage: true,
-        video: servicio_produccion_3,
       },
       {
         label: "Podcast",
         link: "podcast",
-        description:
-          "¡Gritalo para que se haga realidad! No todo se cuenta con imágenes: también con la voz. Producimos podcasts de principio a fin: concepto, guion, grabación y edición. Creamos contenidos sonoros que posicionan a tu marca como referente y construyen comunidad.",
+        video: "/servicios/produccion_audiovisual/servicio_produccion_4.mp4",
         videoOrImage: true,
-        video: servicio_produccion_4,
       },
     ],
   },
@@ -154,156 +88,118 @@ export const serviceList = [
     slug: "redes-sociales",
     title: "Redes Sociales",
     ctaLink: "/servicios/redes-sociales",
-    video: redesociales,
+    video: "/servicios/redes_sociales/redes_sociales.mp4",
     icon: iconRedes,
-    description:
-      "Estrategia, contenido y gestión que convierten seguidores en comunidad, fortaleciendo tu presencia digital con resultados medibles.",
     subServices: [
       {
         label: "Estrategia",
         link: "estrategia",
-        description:
-          "Cada red social tiene su propio lenguaje y su propia audiencia. Diseñamos estrategias a la medida, para que tus contenidos encuentren su lugar, su público y su propósito digital.",
+        video: "/servicios/redes_sociales/servicio_redes_1.mp4",
         videoOrImage: true,
-        video: servicio_redes_1,
       },
       {
         label: "Content Management",
         link: "content-management",
-        description:
-          "Nos encargamos de la planificación, programación y optimización de tu contenido para que sea constante, claro y coherente en cada plataforma. Realizamos informes para que sepas en dónde estás y a dónde vas.",
+        video: "/servicios/redes_sociales/servicio_redes_2.mp4",
         videoOrImage: true,
-        video: servicio_redes_2,
       },
       {
         label: "Creación de contenido",
         link: "creacion-de-contenido",
-        description:
-          "Nuestra cosa favorita: Crear. \n Ya sea en Instagram, TikTok, Facebook, LinkedIn o Youtube. Generamos el contenido que necesites, pensando en atraer, emocionar y generar interacción. Desde posts estáticos, reels, historias. Queremos que tu feed sea el lugar donde el mundo conozca tus sueños.",
+        video: "/servicios/redes_sociales/servicio_redes_3.mp4",
         videoOrImage: true,
-        video: servicio_redes_3,
       },
       {
         label: "Ads Manager",
         link: "ads-manager",
-        description:
-          "Gestionamos campañas de publicidad digital que convierten inversión en resultados. Segmentamos, medimos y optimizamos para garantizar que tu mensaje llegue a la audiencia correcta. Trabajamos con las principales plataformas: Meta Ads (Instagram y Facebook), TikTok Ads, Google Ads, YouTube Ads y LinkedIn Ads.",
+        video: "/servicios/redes_sociales/servicio_redes_4.mp4",
         videoOrImage: true,
-        video: servicio_redes_4,
       },
       {
         label: "Copywriting",
         link: "copywriting",
-        description:
-          "Los mensajes son lo que más importa. \n Nosotros los creamos, los descubrimos, los afinamos y ponemos en palabras que conectan, emocionan y transforman lectores en creyentes.",
+        video: "/servicios/redes_sociales/servicio_redes_5.mp4",
         videoOrImage: true,
-        video: servicio_redes_5,
       },
     ],
   },
 
   {
     slug: "marketing-digital",
-    title: "Marketing digital",
+    title: "Marketing Digital",
     ctaLink: "/servicios/marketing-digital",
-    video: marketingDigital,
+    video: "/servicios/marketing_digital/marketing_digital.mp4",
     icon: iconEstrategia,
-    description:
-      "Diseñamos campañas digitales que posicionan tu marca, cuidan tu reputación, amplifican tu alcance. Te conectamos con las personas correctas, en el momento correcto y con el mensaje que merece ser escuchado.",
     subServices: [
       {
         label: "Creación de marca",
         link: "creacion-de-marca",
-        description:
-          "Toda marca nace de una creencia, de un sueño que merece ser contado. En Posting lo transformamos en identidad: una voz, un tono y una historia que vive en cada canal digital, construyendo una presencia auténtica y coherente.",
+        video: "/servicios/marketing_digital/servicio_marketing_1.mp4",
         videoOrImage: true,
-        video: servicio_marketing_1,
       },
       {
         label: "Campañas BTL",
-        link: "campañas-btl",
-        description:
-          "Ideas que sorprenden fuera de la pantalla. Creamos experiencias creativas que invitan a interactuar en el mundo real y que dejan huella más allá de un anuncio, impulsando proyectos, marcas e iniciativas que quieren hacerse inolvidables.",
+        link: "campanas-btl",
+        video: "/servicios/marketing_digital/servicio_marketing_2.mp4",
         videoOrImage: true,
-        video: servicio_marketing_2,
       },
       {
         label: "CRM",
-        link: "CRM",
-        description:
-          "La base de datos es el corazón de tu proyecto. Con un CRM optimizado, transformamos la gestión de leads en un proceso organizado y medible. Desde la trazabilidad de clientes hasta la segmentación inteligente, te ayudamos a convertir contactos en relaciones duraderas.",
+        link: "crm",
+        video: "/servicios/marketing_digital/servicio_marketing_3.mp4",
         videoOrImage: true,
-        video: servicio_marketing_3,
       },
       {
         label: "CX",
         link: "cx",
-        description:
-          "Usa la tecnología a tu favor. Diseñamos estrategias de Customer Experience con agentes autónomos, chatbots, IA conversacional o clasificación de leads con IA. Haz que cada mensaje entrante encuentre una respuesta inmediata y precisa.",
+        video: "/servicios/marketing_digital/servicio_marketing_4.mp4",
         videoOrImage: true,
-        video: servicio_marketing_4,
       },
-
       {
         label: "Outbound Marketing",
         link: "outbound-marketing",
-        description:
-          "Llevamos tu mensaje hasta donde está tu audiencia, incluso antes de que te busquen. Creamos acciones personalizadas para abrir conversaciones y atraer prospectos con mayor probabilidad de convertirse en clientes.",
+        video: "/servicios/marketing_digital/servicio_marketing_5.mp4",
         videoOrImage: true,
-        video: servicio_marketing_5,
       },
     ],
   },
 
   {
     slug: "desarrollo-web",
-    title: "Desarrollo web",
-    icon: iconDesarrollo,
+    title: "Desarrollo Web",
     ctaLink: "/servicios/desarrollo-web",
-    video: desarrolloWeb,
-    description:
-      "Si no existes en el mundo digital, ¿de verdad existes? \n Tu web es tu vitrina digital. Diseñamos y desarrollamos sitios que combinan estética, funcionalidad y estrategia para impulsar tus sueños.",
+    video: "/servicios/desarrollo_web/desarrollo_web.mp4",
+    icon: iconDesarrollo,
     subServices: [
       {
-        label: "Web design (UX/UI)",
-        link: "web-design",
-        description:
-          "Diseñamos interfaces que son bonitas y fáciles de usar. Unimos diseño UX/UI para que tu sitio sea intuitivo, atractivo y capaz de guiar al usuario hacia la acción que buscas, mejorando su experiencia y el valor percibido de tu marca.",
+        label: "UX / UI",
+        link: "ux-ui",
+        video: "/servicios/desarrollo_web/servicio_web_1.mp4",
         videoOrImage: true,
-        video: servicio_web_1,
       },
       {
         label: "Full Code",
         link: "full-code",
-        description:
-          "Desarrollos tan únicos como tus sueños. \n Desarrollamos a la medida en código, si eso quieres. Programamos desde cero para crear plataformas únicas, seguras y escalables, que se ajustan a tus necesidades específicas",
+        video: "/servicios/desarrollo_web/servicio_web_2.mp4",
         videoOrImage: true,
-        video: servicio_web_2,
       },
       {
         label: "WordPress",
         link: "wordpress",
-        description:
-          "Nos adaptamos a ti. \n Desarrollamos y personalizamos tu web para que refleje tu marca de forma auténtica, sin plantillas genéricas, pero sin código. Y si lo prefieres, también te acompañamos con capacitación para que aprendas a gestionar tu propio sitio con confianza y autonomía.",
+        video: "/servicios/desarrollo_web/servicio_web_3.mp4",
         videoOrImage: true,
-        video: servicio_web_3,
       },
       {
         label: "E-commerce",
         link: "e-commerce",
-        description:
-          "Si tu sueño es vender, te ayudamos. \n Tu tienda online lista para vender. Creamos experiencias de compra fluidas y seguras que combinan diseño atractivo, navegación simple y procesos de pago confiables.",
+        video: "/servicios/desarrollo_web/servicio_web_4.mp4",
         videoOrImage: true,
-        video: servicio_web_4,
       },
-
       {
-        label: "SEO ",
+        label: "SEO",
         link: "seo",
-        description:
-          "Redactamos y optimizamos contenidos con criterios de SEO para que Google te encuentre sin necesidad de depender de pauta paga. Y si quieres aprender, te acompañamos para que domines las bases del posicionamiento orgánico y ganes visibilidad de forma sostenible.",
+        video: "/servicios/desarrollo_web/servicio_web_5.mp4",
         videoOrImage: true,
-        video: servicio_web_5,
       },
     ],
   },

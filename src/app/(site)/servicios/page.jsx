@@ -1,26 +1,12 @@
 /**
  * @fileoverview Página principal de servicios.
- *
- * Este componente muestra la sección “Servicios” del sitio web, presentando
- * la oferta integral de la empresa de manera visual y narrativa. Combina
- * un fondo en video, tarjetas descriptivas animadas y una sección de preguntas
- * frecuentes (FAQ) para guiar al usuario a través de los servicios disponibles.
- *
- * Estructura principal:
- * - Video de fondo introductorio.
- * - Descripción conceptual de los servicios.
- * - Listado de botones de navegación a servicios específicos.
- * - Sección de tarjetas animadas (Cards) con detalles por servicio.
- * - Bloque final de preguntas frecuentes.
- *
- * @module Services
  */
 
 "use client";
 
 import { motion } from "framer-motion";
 
-/* ====== Componentes UI reutilizables ====== */
+/* ====== Componentes UI ====== */
 import BackgroundVideo from "@ui/BackgroundVideo";
 import FAQ from "@sections/FAQ";
 import CardService from "@ui/CardService";
@@ -30,30 +16,18 @@ import Button from "@ui/Button";
 import { serviceList } from "@data/services";
 import { faqListPrincipal } from "@data/FAQ";
 
-/* ====== Recursos multimedia ====== */
-import video from "@/assets/servicios/sevicios_principal.mp4";
-import video_responsive from "@/assets/servicios/servicios_principal_responsive.mp4";
-
 /**
  * Componente principal `Services`.
  *
- * Renderiza la página principal de servicios, mostrando un enfoque integral
- * de las soluciones ofrecidas por la agencia. Combina efectos de animación
- * y elementos interactivos para generar una experiencia fluida y envolvente.
- *
- * @component
- * @example
- * return (<Services />)
- *
- * @returns {JSX.Element} Página renderizada de la sección de servicios.
+ * @returns {JSX.Element}
  */
 function Services() {
   return (
     <>
       {/* ===== VIDEO DE FONDO ===== */}
       <BackgroundVideo
-        mp4Src={video}
-        mp4SrcMobile={video_responsive}
+        mp4Src="/servicios/servicios_principal.mp4"
+        mp4SrcMobile="/servicios/servicios_principal_responsive.mp4"
         hideOnMobile
         pauseWhenOffscreen
         className="h-[35vh] md:h-[60vh] [&_video]:opacity-100 [&_video]:brightness-100"
@@ -86,7 +60,7 @@ function Services() {
           ))}
         </div>
 
-        {/* ===== TARJETAS DE SERVICIO ANIMADAS ===== */}
+        {/* ===== TARJETAS DE SERVICIO ===== */}
         <div className="relative mt-12 space-y-0">
           {serviceList.map((service, index) => (
             <motion.div
@@ -104,7 +78,7 @@ function Services() {
         </div>
       </section>
 
-      {/* ===== PREGUNTAS FRECUENTES ===== */}
+      {/* ===== FAQ ===== */}
       <FAQ faqList={faqListPrincipal} />
     </>
   );
