@@ -26,7 +26,7 @@ function Services() {
     <>
       {/* ===== VIDEO DE FONDO ===== */}
       <BackgroundVideo
-        mp4Src="/servicios/servicios_principal.mp4"
+        mp4Src="/servicios/servicios_principal.webm"
         mp4SrcMobile="/servicios/servicios_principal_responsive.mp4"
         hideOnMobile
         pauseWhenOffscreen
