@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-
+import LazyVideo from "@components/ui/LazyVideo";
 /**
  * @component Subservices
  * @description
@@ -35,14 +35,10 @@ export default function Subservices({ subservice, index }) {
   const renderMedia = () => {
     if (subservice.video) {
       return (
-        <video
+        <LazyVideo
           src={subservice.video}
-          autoPlay
-          loading="lazy"
-          loop
-          muted
-          playsInline
           className="w-[400px] max-w-full h-auto object-contain mx-auto"
+          autoPlay
         />
       );
     }

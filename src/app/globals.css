@@ -5,7 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* Solo Chrome */
+  video {
+    opacity: 1 !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+}
 
 
 

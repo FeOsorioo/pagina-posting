@@ -1,118 +1,106 @@
-
-// ======================================================
-// ICONOS
-// ======================================================
+//Iconos 
 import iconDiseno from "@/assets/home/diseno_grafico.webp";
 import iconDesarrollo from "@/assets/home/desarrollo_web.webp";
 import iconProduccion from "@/assets/home/produccion.webp";
 import iconEstrategia from "@/assets/home/estrategia_digital.webp";
 import iconRedes from "@/assets/home/redes_sociales.webp";
 
-// ======================================================
-// VIDEOS PRINCIPALES
-// ======================================================
-const disenografico = '/servicios/diseno_grafico/diseno_grafico.webm';
-const redesociales = '/servicios/redes_sociales/redes_sociales.webm';
-const desarrolloWeb = '/servicios/desarrollo_web/desarrollo_web.webm';
-const marketingDigital = '/servicios/marketing_digital/marketing_digital.webm';
-const produccionAudiovisual = '/servicios/produccion_audiovisual/produccion_audiovisual.webm';
+//Video
+const disenografico = "/servicios/diseno_grafico.webm";
+const redesociales = "/servicios/redes_sociales.webm";
+const desarrolloWeb = "/servicios/desarrollo_web.webm";
+const marketingDigital = "/servicios/marketing_digital.webm";
+const produccionAudiovisual = "/servicios/produccion_audiovisual.webm";
 
-// ======================================================
-// VIDEOS DISEÑO GRÁFICO
-// ======================================================
-const servicio_diseno_1 = '/servicios/diseno_grafico/servicio_diseno_1.webm';
-const servicio_diseno_2 = '/servicios/diseno_grafico/servicio_diseno_2.webm';
-const servicio_diseno_3 = '/servicios/diseno_grafico/servicio_diseno_3.webm';
-const servicio_diseno_4 = '/servicios/diseno_grafico/servicio_diseno_4.webm';
-const servicio_diseno_5 = '/servicios/diseno_grafico/servicio_diseno_5.webm';
+// Videos diseño grafico
+const servicio_diseno_1 = "/servicios/diseno_grafico/servicio_diseno_1.webm";
+const servicio_diseno_2 = "/servicios/diseno_grafico/servicio_diseno_2.webm";
+const servicio_diseno_3 = "/servicios/diseno_grafico/servicio_diseno_3.webm";
+const servicio_diseno_4 = "/servicios/diseno_grafico/servicio_diseno_4.webm";
+const servicio_diseno_5 = "/servicios/diseno_grafico/servicio_diseno_5.webm";
 
-// ======================================================
-// VIDEOS PRODUCCIÓN AUDIOVISUAL
-// ======================================================
-const servicio_produccion_1 = '/servicios/produccion_audiovisual/servicio_produccion_1.webm';
-const servicio_produccion_2 = '/servicios/produccion_audiovisual/servicio_produccion_2.webm';
-const servicio_produccion_3 = '/servicios/produccion_audiovisual/servicio_produccion_3.webm';
-const servicio_produccion_4 = '/servicios/produccion_audiovisual/servicio_produccion_4.webm';
+// Videos de produccion audiovisual
+const servicio_produccion_1 = "/servicios/produccion_audiovisual/servicio_produccion_1.webm";
+const servicio_produccion_2 = "/servicios/produccion_audiovisual/servicio_produccion_2.webm";
+const servicio_produccion_3 = "/servicios/produccion_audiovisual/servicio_produccion_3.webm";
+const servicio_produccion_4 = "/servicios/produccion_audiovisual/servicio_produccion_4.webm";
 
-// ======================================================
-// VIDEOS REDES SOCIALES
-// ======================================================
-const servicio_redes_1 = '/servicios/redes_sociales/servicio_redes_1.webm';
-const servicio_redes_2 = '/servicios/redes_sociales/servicio_redes_2.webm';
-const servicio_redes_3 = '/servicios/redes_sociales/servicio_redes_3.webm';
-const servicio_redes_4 = '/servicios/redes_sociales/servicio_redes_4.webm';
-const servicio_redes_5 = '/servicios/redes_sociales/servicio_redes_5.webm';
+// Videos de Redes Sociales
+const servicio_redes_1 = "/servicios/redes_sociales/servicio_redes_1.webm";
+const servicio_redes_2 = "/servicios/redes_sociales/servicio_redes_2.webm";
+const servicio_redes_3 = "/servicios/redes_sociales/servicio_redes_3.webm";
+const servicio_redes_4 = "/servicios/redes_sociales/servicio_redes_4.webm";
+const servicio_redes_5 = "/servicios/redes_sociales/servicio_redes_5.webm";
 
-// ======================================================
-// VIDEOS DESARROLLO WEB
-// ======================================================
-const servicio_web_1 = '/servicios/desarrollo_web/servicio_web_1.webm';
-const servicio_web_2 = '/servicios/desarrollo_web/servicio_web_2.webm';
-const servicio_web_3 = '/servicios/desarrollo_web/servicio_web_3.webm';
-const servicio_web_4 = '/servicios/desarrollo_web/servicio_web_4.webm';
-const servicio_web_5 = '/servicios/desarrollo_web/servicio_web_5.webm';
+// Videos de Desarrollo Web
+const servicio_web_1 = "/servicios/desarrollo_web/servicio_web_1.webm";
+const servicio_web_2 = "/servicios/desarrollo_web/servicio_web_2.webm";
+const servicio_web_3 = "/servicios/desarrollo_web/servicio_web_3.webm";
+const servicio_web_4 = "/servicios/desarrollo_web/servicio_web_4.webm";
+const servicio_web_5 = "/servicios/desarrollo_web/servicio_web_5.webm";
 
-// ======================================================
-// VIDEOS MARKETING DIGITAL
-// ======================================================
-const servicio_marketing_1 = '/servicios/marketing_digital/servicio_marketing_1.webm';
-const servicio_marketing_2 = '/servicios/marketing_digital/servicio_marketing_2.webm';
-const servicio_marketing_3 = '/servicios/marketing_digital/servicio_marketing_3.webm';
-const servicio_marketing_4 = '/servicios/marketing_digital/servicio_marketing_4.webm';
-const servicio_marketing_5 = '/servicios/marketing_digital/servicio_marketing_5.webm';
+// Videos de Marketing Digital
+const servicio_marketing_1 = "/servicios/marketing_digital/servicio_marketing_1.webm";
+const servicio_marketing_2 = "/servicios/marketing_digital/servicio_marketing_2.webm";
+const servicio_marketing_3 = "/servicios/marketing_digital/servicio_marketing_3.webm";
+const servicio_marketing_4 = "/servicios/marketing_digital/servicio_marketing_4.webm";
+const servicio_marketing_5 = "/servicios/marketing_digital/servicio_marketing_5.webm";
 
-// ======================================================
-// SERVICE LIST
-// ======================================================
+
 export const serviceList = [
   {
     slug: "diseno-grafico",
-    title: "Diseño Gráfico",
+    title: "Diseño Gráfico",
     ctaLink: "/servicios/diseno-grafico",
     video: disenografico,
     icon: iconDiseno,
     description:
-      "Todo entra por los ojos ¿cierto?\nCreamos diseños que hacen tangible la personalidad de tu marca y la proyectan con fuerza en cada espacio (Digital o físico).",
+      "Todo entra por los ojos ¿cierto? \n Creamos diseños que hacen tangible la personalidad de tu marca y la proyectan con fuerza en cada espacio (Digital o físico).",
     subServices: [
       {
         label: "Branding",
-        link: "branding",
-        video: servicio_diseno_1,
-        videoOrImage: true,
         description:
-          "Un logo nunca será suficiente. Creamos un sistema completo que le da identidad a sueños: colores, tipografías, tono visual y símbolos que hacen que el mundo empiece a creer en ellos también.\nBranding que se sostiene en el tiempo y se diferencia en cualquier espacio.",
+          "Un logo nunca será suficiente. Creamos un sistema completo que le da identidad a sueños: colores, tipografías, tono visual y símbolos que hacen que el mundo empiece a creer en ellos también. \n  Branding que se sostiene en el tiempo y se diferencia en cualquier espacio.",
+        videoOrImage: true,
+        video: servicio_diseno_1,
+
+        link: "branding",
       },
       {
         label: "Diseño digital",
-        link: "diseño-digital",
-        video: servicio_diseno_2,
-        videoOrImage: true,
         description:
-          "Diseñamos piezas pensadas para cada espacio online, con coherencia visual y la fuerza suficiente para destacar en medio del scroll infinito. Te ayudamos con tus redes sociales, páginas web, anuncios y publicidad digital.",
+          "Diseñamos piezas pensadas para cada espacio online, con coherencia visual y la fuerza suficiente para destacar en medio del scroll infinito.Te ayudamos con tus redes sociales, páginas web, anuncios y publicidad digital.",
+        videoOrImage: true,
+        video: servicio_diseno_2,
+
+        link: "diseño-digital",
       },
       {
         label: "Material POP",
-        link: "material-pop",
-        video: servicio_diseno_3,
-        videoOrImage: true,
         description:
           "Los sueños merecen conocer la calle, las vitrinas, las paredes. Diseñamos piezas que no pasan desapercibidas y logran que la gente se lleve tu nombre en la memoria… y en las manos.",
+        videoOrImage: true,
+        video: servicio_diseno_3,
+
+        link: "material-pop",
       },
       {
         label: "Ilustración",
-        link: "ilustracion",
-        video: servicio_diseno_4,
-        videoOrImage: true,
         description:
-          "Creemos en lo que aún no existe. Vemos formas, personajes y mundos posibles donde otros solo ven un espacio en blanco. Creamos personajes, etiquetas y proyectos únicos.",
+          "Creemos en lo que aún no existe. Vemos formas, personajes y mundos posibles donde otros solo ven un espacio en blanco.  Creamos personajes, etiquetas y proyectos únicos que no existen en ningún banco de imágenes.",
+        videoOrImage: true,
+        video: servicio_diseno_4,
+
+        link: "ilustracion",
       },
       {
-        label: "Diseño editorial",
-        link: "diseño-editoral",
-        video: servicio_diseno_5,
-        videoOrImage: true,
+        label: "Diseño editoral",
         description:
-          "Un buen editorial no solo organiza páginas: cuenta una historia. Diseñamos catálogos, revistas e informes con diagramación cuidada, textos bien presentados y versiones listas para impresión o digital.",
+          "Un buen editorial no solo organiza páginas: cuenta una historia. Diseñamos catálogos, revistas e informes con diagramación cuidada, textos bien presentados y versiones listas para impresión o digital. Piezas que invitan a detenerse y leer.",
+        videoOrImage: true,
+        video: servicio_diseno_5,
+
+        link: "diseño-editoral",
       },
     ],
   },
@@ -129,34 +117,34 @@ export const serviceList = [
       {
         label: "Video",
         link: "video",
-        video: servicio_produccion_1,
-        videoOrImage: true,
         description:
-          "Creamos videos corporativos, publicitarios y creativos que transmiten y se adaptan a los formatos digitales que necesites.",
+          "Un video puede ser el principio de todo lo que sueñas. En el mundo digital tus sueños deben ocupar las pantallas. Creamos videos corporativos, publicitarios y creativos que transmiten y se adaptan a los formatos digitales que necesites. ",
+        videoOrImage: true,
+        video: servicio_produccion_1,
       },
       {
         label: "Fotografía",
         link: "fotografia",
-        video: servicio_produccion_2,
-        videoOrImage: true,
         description:
-          "Capturamos imágenes profesionales que destacan productos, servicios, personas o momentos, cuidando siempre la estética y el mensaje.",
+          "La primera impresión no tiene segundas oportunidades. Las fotografías son la primera impresión en el mundo digital. En Posting capturamos imágenes profesionales que destacan productos, servicios, personas o momentos, cuidando siempre la estética y el mensaje que quieres proyectar.",
+        videoOrImage: true,
+        video: servicio_produccion_2,
       },
       {
         label: "Animación",
         link: "animacion",
-        video: servicio_produccion_3,
-        videoOrImage: true,
         description:
-          "Motion graphics y animación para simplificar conceptos complejos y hacer tus proyectos únicos.",
+          "Cuando las ideas necesitan movimiento, entran la animación y los motion graphics. Diseñamos piezas dinámicas que simplifican conceptos complejos, sorprenden y hacen que tus proyectos se sientan y sean únicos.",
+        videoOrImage: true,
+        video: servicio_produccion_3,
       },
       {
         label: "Podcast",
         link: "podcast",
-        video: servicio_produccion_4,
-        videoOrImage: true,
         description:
-          "Producción completa de podcasts: concepto, guion, grabación y edición.",
+          "¡Gritalo para que se haga realidad! No todo se cuenta con imágenes: también con la voz. Producimos podcasts de principio a fin: concepto, guion, grabación y edición. Creamos contenidos sonoros que posicionan a tu marca como referente y construyen comunidad.",
+        videoOrImage: true,
+        video: servicio_produccion_4,
       },
     ],
   },
@@ -173,42 +161,42 @@ export const serviceList = [
       {
         label: "Estrategia",
         link: "estrategia",
-        video: servicio_redes_1,
-        videoOrImage: true,
         description:
-          "Diseñamos estrategias a la medida para que tus contenidos encuentren su lugar, su público y su propósito digital.",
+          "Cada red social tiene su propio lenguaje y su propia audiencia. Diseñamos estrategias a la medida, para que tus contenidos encuentren su lugar, su público y su propósito digital.",
+        videoOrImage: true,
+        video: servicio_redes_1,
       },
       {
         label: "Content Management",
         link: "content-management",
-        video: servicio_redes_2,
-        videoOrImage: true,
         description:
-          "Planificación, programación y optimización de contenido con informes claros y medibles.",
+          "Nos encargamos de la planificación, programación y optimización de tu contenido para que sea constante, claro y coherente en cada plataforma. Realizamos informes para que sepas en dónde estás y a dónde vas.",
+        videoOrImage: true,
+        video: servicio_redes_2,
       },
       {
         label: "Creación de contenido",
         link: "creacion-de-contenido",
-        video: servicio_redes_3,
-        videoOrImage: true,
         description:
-          "Generamos contenido para Instagram, TikTok, Facebook, LinkedIn y YouTube, pensado para atraer y emocionar.",
+          "Nuestra cosa favorita: Crear. \n Ya sea en Instagram, TikTok, Facebook, LinkedIn o Youtube. Generamos el contenido que necesites, pensando en atraer, emocionar y generar interacción. Desde posts estáticos, reels, historias. Queremos que tu feed sea el lugar donde el mundo conozca tus sueños.",
+        videoOrImage: true,
+        video: servicio_redes_3,
       },
       {
         label: "Ads Manager",
         link: "ads-manager",
-        video: servicio_redes_4,
-        videoOrImage: true,
         description:
-          "Gestionamos campañas en Meta, TikTok, Google, YouTube y LinkedIn Ads.",
+          "Gestionamos campañas de publicidad digital que convierten inversión en resultados. Segmentamos, medimos y optimizamos para garantizar que tu mensaje llegue a la audiencia correcta. Trabajamos con las principales plataformas: Meta Ads (Instagram y Facebook), TikTok Ads, Google Ads, YouTube Ads y LinkedIn Ads.",
+        videoOrImage: true,
+        video: servicio_redes_4,
       },
       {
         label: "Copywriting",
         link: "copywriting",
-        video: servicio_redes_5,
-        videoOrImage: true,
         description:
-          "Creamos mensajes que conectan, emocionan y transforman lectores en creyentes.",
+          "Los mensajes son lo que más importa. \n Nosotros los creamos, los descubrimos, los afinamos y ponemos en palabras que conectan, emocionan y transforman lectores en creyentes.",
+        videoOrImage: true,
+        video: servicio_redes_5,
       },
     ],
   },
@@ -220,47 +208,48 @@ export const serviceList = [
     video: marketingDigital,
     icon: iconEstrategia,
     description:
-      "Diseñamos campañas digitales que posicionan tu marca y amplifican tu alcance.",
+      "Diseñamos campañas digitales que posicionan tu marca, cuidan tu reputación, amplifican tu alcance. Te conectamos con las personas correctas, en el momento correcto y con el mensaje que merece ser escuchado.",
     subServices: [
       {
         label: "Creación de marca",
         link: "creacion-de-marca",
-        video: servicio_marketing_1,
-        videoOrImage: true,
         description:
-          "Transformamos sueños en identidad, voz y narrativa digital.",
+          "Toda marca nace de una creencia, de un sueño que merece ser contado. En Posting lo transformamos en identidad: una voz, un tono y una historia que vive en cada canal digital, construyendo una presencia auténtica y coherente.",
+        videoOrImage: true,
+        video: servicio_marketing_1,
       },
       {
         label: "Campañas BTL",
         link: "campañas-btl",
-        video: servicio_marketing_2,
-        videoOrImage: true,
         description:
-          "Experiencias creativas que dejan huella fuera de la pantalla.",
+          "Ideas que sorprenden fuera de la pantalla. Creamos experiencias creativas que invitan a interactuar en el mundo real y que dejan huella más allá de un anuncio, impulsando proyectos, marcas e iniciativas que quieren hacerse inolvidables.",
+        videoOrImage: true,
+        video: servicio_marketing_2,
       },
       {
         label: "CRM",
         link: "CRM",
-        video: servicio_marketing_3,
-        videoOrImage: true,
         description:
-          "Gestión de leads organizada, trazable y medible.",
+          "La base de datos es el corazón de tu proyecto. Con un CRM optimizado, transformamos la gestión de leads en un proceso organizado y medible. Desde la trazabilidad de clientes hasta la segmentación inteligente, te ayudamos a convertir contactos en relaciones duraderas.",
+        videoOrImage: true,
+        video: servicio_marketing_3,
       },
       {
         label: "CX",
         link: "cx",
-        video: servicio_marketing_4,
-        videoOrImage: true,
         description:
-          "Estrategias de Customer Experience con IA y automatización.",
+          "Usa la tecnología a tu favor. Diseñamos estrategias de Customer Experience con agentes autónomos, chatbots, IA conversacional o clasificación de leads con IA. Haz que cada mensaje entrante encuentre una respuesta inmediata y precisa.",
+        videoOrImage: true,
+        video: servicio_marketing_4,
       },
+
       {
         label: "Outbound Marketing",
         link: "outbound-marketing",
-        video: servicio_marketing_5,
-        videoOrImage: true,
         description:
-          "Abrimos conversaciones con prospectos antes de que te busquen.",
+          "Llevamos tu mensaje hasta donde está tu audiencia, incluso antes de que te busquen. Creamos acciones personalizadas para abrir conversaciones y atraer prospectos con mayor probabilidad de convertirse en clientes.",
+        videoOrImage: true,
+        video: servicio_marketing_5,
       },
     ],
   },
@@ -268,51 +257,52 @@ export const serviceList = [
   {
     slug: "desarrollo-web",
     title: "Desarrollo web",
+    icon: iconDesarrollo,
     ctaLink: "/servicios/desarrollo-web",
     video: desarrolloWeb,
-    icon: iconDesarrollo,
     description:
-      "Tu web es tu vitrina digital. Diseñamos y desarrollamos sitios que combinan estética, funcionalidad y estrategia.",
+      "Si no existes en el mundo digital, ¿de verdad existes? \n Tu web es tu vitrina digital. Diseñamos y desarrollamos sitios que combinan estética, funcionalidad y estrategia para impulsar tus sueños.",
     subServices: [
       {
         label: "Web design (UX/UI)",
         link: "web-design",
-        video: servicio_web_1,
-        videoOrImage: true,
         description:
-          "Interfaces intuitivas, atractivas y orientadas a conversión.",
+          "Diseñamos interfaces que son bonitas y fáciles de usar. Unimos diseño UX/UI para que tu sitio sea intuitivo, atractivo y capaz de guiar al usuario hacia la acción que buscas, mejorando su experiencia y el valor percibido de tu marca.",
+        videoOrImage: true,
+        video: servicio_web_1,
       },
       {
         label: "Full Code",
         link: "full-code",
-        video: servicio_web_2,
-        videoOrImage: true,
         description:
-          "Desarrollo a la medida, seguro y escalable.",
+          "Desarrollos tan únicos como tus sueños. \n Desarrollamos a la medida en código, si eso quieres. Programamos desde cero para crear plataformas únicas, seguras y escalables, que se ajustan a tus necesidades específicas",
+        videoOrImage: true,
+        video: servicio_web_2,
       },
       {
         label: "WordPress",
         link: "wordpress",
-        video: servicio_web_3,
-        videoOrImage: true,
         description:
-          "Webs personalizadas sin plantillas genéricas y con autonomía.",
+          "Nos adaptamos a ti. \n Desarrollamos y personalizamos tu web para que refleje tu marca de forma auténtica, sin plantillas genéricas, pero sin código. Y si lo prefieres, también te acompañamos con capacitación para que aprendas a gestionar tu propio sitio con confianza y autonomía.",
+        videoOrImage: true,
+        video: servicio_web_3,
       },
       {
         label: "E-commerce",
         link: "e-commerce",
+        description:
+          "Si tu sueño es vender, te ayudamos. \n Tu tienda online lista para vender. Creamos experiencias de compra fluidas y seguras que combinan diseño atractivo, navegación simple y procesos de pago confiables.",
+        videoOrImage: true,
         video: servicio_web_4,
-        videoOrImage: true,
-        description:
-          "Tiendas online listas para vender con experiencia fluida.",
       },
+
       {
-        label: "SEO",
+        label: "SEO ",
         link: "seo",
-        video: servicio_web_5,
-        videoOrImage: true,
         description:
-          "Optimización de contenido para posicionamiento orgánico sostenible.",
+          "Redactamos y optimizamos contenidos con criterios de SEO para que Google te encuentre sin necesidad de depender de pauta paga. Y si quieres aprender, te acompañamos para que domines las bases del posicionamiento orgánico y ganes visibilidad de forma sostenible.",
+        videoOrImage: true,
+        video: servicio_web_5,
       },
     ],
   },
