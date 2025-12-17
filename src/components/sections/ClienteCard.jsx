@@ -16,7 +16,7 @@ import Image from "next/image";
  * @example
  * <ClienteCard
  *   imageSrc="/img/cliente.webp"
- *   videoSrc="/videos/cliente.mp4"
+ *   videoSrc="/videos/cliente.webm"
  *   title="Cliente X"
  *   link="/portafolio/cliente-x"
  * />

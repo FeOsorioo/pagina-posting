@@ -1,4 +1,5 @@
 import Button from "@components/ui/Button";
+import LazyVideo from "@/components/ui/LazyVideo";
 
 const CardService = ({ service }) => {
   /* Divide el título en:
@@ -6,7 +7,7 @@ const CardService = ({ service }) => {
      - rest → el resto del título (resaltado) */
   const [firstWord, ...rest] = service.title.split(" ");
   const restOfTitle = rest.join(" ");
-
+  console.log(service);
   return (
     <div
       className="grid min-h-[500px] grid-cols-1 items-center gap-8 
@@ -66,16 +67,12 @@ const CardService = ({ service }) => {
       {/* === Columna derecha: video === */}
       {service.video && (
         <div className="flex justify-center">
-          <video
+          <LazyVideo
             src={service.video}
-            muted
-            loop
-            autoPlay
-            loading="lazy"
-            playsInline
-            preload="metadata"
+
             className="max-h-[450px] rounded-xl object-cover"
           />
+       
         </div>
       )}
     </div>

@@ -27,10 +27,10 @@ function Services() {
       {/* ===== VIDEO DE FONDO ===== */}
       <BackgroundVideo
         mp4Src="/servicios/servicios_principal.webm"
-        mp4SrcMobile="/servicios/servicios_principal_responsive.mp4"
+        mp4SrcMobile="/servicios/servicios_principal_responsive.webm"
         hideOnMobile
         pauseWhenOffscreen
-        className="h-[35vh] md:h-[60vh] [&_video]:opacity-100 [&_video]:brightness-100"
+        className="h-[60vh] md:h-[60vh] [&_video]:opacity-100 [&_video]:brightness-100"
       />
 
       {/* ===== SECCIÓN DE INTRODUCCIÓN ===== */}

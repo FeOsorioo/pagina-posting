@@ -24,8 +24,8 @@ function MarketingDigital() {
     <>
       {/* ===== HERO: VIDEO DE PRESENTACIÓN ===== */}
       <BackgroundVideo
-        mp4Src="/servicios/marketing_digital/marketing_digital_banner.mp4"
-        mp4SrcMobile="/servicios/marketing_digital/marketing_digital_banner_responsive.mp4"
+        mp4Src="/servicios/marketing_digital/marketing_digital_banner.webm"
+        mp4SrcMobile="/servicios/marketing_digital/marketing_digital_banner_responsive.webm"
         hideOnMobile
         pauseWhenOffscreen
         className="h-[50vh] md:h-[60vh] [&_video]:opacity-100 [&_video]:brightness-100"

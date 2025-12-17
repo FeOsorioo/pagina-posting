@@ -40,7 +40,7 @@ function Home() {
       {/* HERO DESKTOP: VIDEO */}
       <div className="hidden md:block">
         <BackgroundVideo
-          mp4Src="/home/principal.mp4"
+          mp4Src="/home/principal.webm"
           hideOnMobile
           pauseWhenOffscreen
           className="h-[100vh]"
@@ -106,17 +106,13 @@ function Home() {
       </TextBanner>
 
       {/* CLIENTES */}
-      <BackgroundWrapper
-        imageUrl={bg1.src}
-        classBG="bg-no-repeat bg-contain bg-left"
-        backgroundSize="60% auto"
-      >
+   
         <section className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 lg:px-12 py-4">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-8">
             <div className="md:col-span-3">
               <ClienteCard
                 imageSrc={imgUnisanitas}
-                videoSrc="/home/clientes/video_unisanitas.mp4"
+                videoSrc="/home/clientes/video_unisanitas.webm"
                 alt="Unisanitas"
                 link="/portafolio/unisanitas"
                 title="UNISANITAS"
@@ -129,7 +125,7 @@ function Home() {
             <div className="md:col-span-2">
               <ClienteCard
                 imageSrc={imgUniversal}
-                videoSrc="/home/clientes/video_universal.mp4"
+                videoSrc="/home/clientes/video_universal.webm"
                 alt="Universal de Mudanzas"
                 link="/portafolio/universal-de-mudanzas"
                 title="UNIVERSAL DE MUDANZAS"
@@ -143,7 +139,7 @@ function Home() {
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             <ClienteCard
               imageSrc={imgCafe}
-              videoSrc="/home/clientes/video_cafe.mp4"
+              videoSrc="/home/clientes/video_cafe.webm"
               alt="Café Finca Helena"
               link="/portafolio/cafe-finca-helena"
               title="CAFÉ FINCA HELENA"
@@ -152,7 +148,7 @@ function Home() {
 
             <ClienteCard
               imageSrc={imgCcg}
-              videoSrc="/home/clientes/video_ccg.mp4"
+              videoSrc="/home/clientes/video_ccg.webm"
               alt="Contact Center Grupo"
               link="/portafolio/contact-center-grupo"
               title="CONTACT CENTER GRUPO"
@@ -161,7 +157,7 @@ function Home() {
 
             <ClienteCard
               imageSrc={imgDelirio}
-              videoSrc="/home/clientes/video_delirio.mp4"
+              videoSrc="/home/clientes/video_delirio.webm"
               alt="Delirio Eterno"
               link="/portafolio/delirio-eterno"
               title="DELIRIO ETERNO"
@@ -174,7 +170,7 @@ function Home() {
             />
           </div>
         </section>
-      </BackgroundWrapper>
+    
 
       {/* CIERRE */}
       <BackgroundWrapper
