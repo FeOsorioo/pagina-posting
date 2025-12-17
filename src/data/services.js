@@ -60,7 +60,7 @@ export const serviceList = [
       {
         label: "Branding",
         description:
-          "Un logo nunca será suficiente. Creamos un sistema completo que le da identidad a sueños: colores, tipografías, tono visual y símbolos que hacen que el mundo empiece a creer en ellos también. \n  Branding que se sostiene en el tiempo y se diferencia en cualquier espacio.",
+          "Un logo nunca será suficiente. \n Creamos un sistema completo que le da identidad a sueños: colores, tipografías, tono visual y símbolos que hacen que el mundo empiece a creer en ellos también. \n  Branding que se sostiene en el tiempo y se diferencia en cualquier espacio.",
         videoOrImage: true,
         video: servicio_diseno_1,
 
@@ -87,7 +87,7 @@ export const serviceList = [
       {
         label: "Ilustración",
         description:
-          "Creemos en lo que aún no existe. Vemos formas, personajes y mundos posibles donde otros solo ven un espacio en blanco.  Creamos personajes, etiquetas y proyectos únicos que no existen en ningún banco de imágenes.",
+          "Creemos en lo que aún no existe. \n Vemos formas, personajes y mundos posibles donde otros solo ven un espacio en blanco.  Creamos personajes, etiquetas y proyectos únicos que no existen en ningún banco de imágenes.",
         videoOrImage: true,
         video: servicio_diseno_4,
 
@@ -96,7 +96,7 @@ export const serviceList = [
       {
         label: "Diseño editoral",
         description:
-          "Un buen editorial no solo organiza páginas: cuenta una historia. Diseñamos catálogos, revistas e informes con diagramación cuidada, textos bien presentados y versiones listas para impresión o digital. Piezas que invitan a detenerse y leer.",
+          "Un buen editorial no solo organiza páginas: cuenta una historia. \n Diseñamos catálogos, revistas e informes con diagramación cuidada, textos bien presentados y versiones listas para impresión o digital. Piezas que invitan a detenerse y leer.",
         videoOrImage: true,
         video: servicio_diseno_5,
 
@@ -112,13 +112,13 @@ export const serviceList = [
     video: produccionAudiovisual,
     icon: iconProduccion,
     description:
-      "Que se hagan realidad. Tus sueños merecen ser vistos y escuchados. Producimos contenido visual y sonoro que conecta, emociona y potencia tu presencia digital.",
+      "Que se hagan realidad. Tus sueños merecen ser vistos y escuchados. \n Producimos contenido visual y sonoro que conecta, emociona y potencia tu presencia digital.",
     subServices: [
       {
         label: "Video",
         link: "video",
         description:
-          "Un video puede ser el principio de todo lo que sueñas. En el mundo digital tus sueños deben ocupar las pantallas. Creamos videos corporativos, publicitarios y creativos que transmiten y se adaptan a los formatos digitales que necesites. ",
+          "Un video puede ser el principio de todo lo que sueñas.\n En el mundo digital tus sueños deben ocupar las pantallas. Creamos videos corporativos, publicitarios y creativos que transmiten y se adaptan a los formatos digitales que necesites. ",
         videoOrImage: true,
         video: servicio_produccion_1,
       },
@@ -126,7 +126,7 @@ export const serviceList = [
         label: "Fotografía",
         link: "fotografia",
         description:
-          "La primera impresión no tiene segundas oportunidades. Las fotografías son la primera impresión en el mundo digital. En Posting capturamos imágenes profesionales que destacan productos, servicios, personas o momentos, cuidando siempre la estética y el mensaje que quieres proyectar.",
+          "La primera impresión no tiene segundas oportunidades. \n Las fotografías son la primera impresión en el mundo digital. En Posting capturamos imágenes profesionales que destacan productos, servicios, personas o momentos, cuidando siempre la estética y el mensaje que quieres proyectar.",
         videoOrImage: true,
         video: servicio_produccion_2,
       },
@@ -186,7 +186,7 @@ export const serviceList = [
         label: "Ads Manager",
         link: "ads-manager",
         description:
-          "Gestionamos campañas de publicidad digital que convierten inversión en resultados. Segmentamos, medimos y optimizamos para garantizar que tu mensaje llegue a la audiencia correcta. Trabajamos con las principales plataformas: Meta Ads (Instagram y Facebook), TikTok Ads, Google Ads, YouTube Ads y LinkedIn Ads.",
+          "Gestionamos campañas de publicidad digital que convierten inversión en resultados. \n Segmentamos, medimos y optimizamos para garantizar que tu mensaje llegue a la audiencia correcta. Trabajamos con las principales plataformas: Meta Ads (Instagram y Facebook), TikTok Ads, Google Ads, YouTube Ads y LinkedIn Ads.",
         videoOrImage: true,
         video: servicio_redes_4,
       },
@@ -222,7 +222,7 @@ export const serviceList = [
         label: "Campañas BTL",
         link: "campañas-btl",
         description:
-          "Ideas que sorprenden fuera de la pantalla. Creamos experiencias creativas que invitan a interactuar en el mundo real y que dejan huella más allá de un anuncio, impulsando proyectos, marcas e iniciativas que quieren hacerse inolvidables.",
+          "Ideas que sorprenden fuera de la pantalla. \n Creamos experiencias creativas que invitan a interactuar en el mundo real y que dejan huella más allá de un anuncio, impulsando proyectos, marcas e iniciativas que quieren hacerse inolvidables.",
         videoOrImage: true,
         video: servicio_marketing_2,
       },
@@ -230,7 +230,7 @@ export const serviceList = [
         label: "CRM",
         link: "CRM",
         description:
-          "La base de datos es el corazón de tu proyecto. Con un CRM optimizado, transformamos la gestión de leads en un proceso organizado y medible. Desde la trazabilidad de clientes hasta la segmentación inteligente, te ayudamos a convertir contactos en relaciones duraderas.",
+          "La base de datos es el corazón de tu proyecto. \n Con un CRM optimizado, transformamos la gestión de leads en un proceso organizado y medible. Desde la trazabilidad de clientes hasta la segmentación inteligente, te ayudamos a convertir contactos en relaciones duraderas.",
         videoOrImage: true,
         video: servicio_marketing_3,
       },
@@ -238,7 +238,7 @@ export const serviceList = [
         label: "CX",
         link: "cx",
         description:
-          "Usa la tecnología a tu favor. Diseñamos estrategias de Customer Experience con agentes autónomos, chatbots, IA conversacional o clasificación de leads con IA. Haz que cada mensaje entrante encuentre una respuesta inmediata y precisa.",
+          "Usa la tecnología a tu favor. \n Diseñamos estrategias de Customer Experience con agentes autónomos, chatbots, IA conversacional o clasificación de leads con IA. Haz que cada mensaje entrante encuentre una respuesta inmediata y precisa.",
         videoOrImage: true,
         video: servicio_marketing_4,
       },

@@ -31,7 +31,7 @@ export default function LazyVideo({
   return (
     <video
       ref={videoRef}
-      className={`[&_video]:opacity-100 [&_video]:brightness-100 block w-full h-full object-cover bg-black transform-gpu translate-z-0 will-change-transform ${className}`}
+      className={`[&_video]:opacity-100 [&_video]:brightness-100 transform-gpu translate-z-0 will-change-transform ${className}`}
       muted
       loop
       playsInline
