@@ -1,34 +1,7 @@
-/**
- * @fileoverview Tarjeta de cliente/proyecto con imagen + video en hover.
- *
- * La imagen se oculta suavemente y muestra un video al pasar el cursor.
- */
-
 import Link from "next/link";
 import Image from "next/image";
+import { useRef } from "react";
 
-/**
- * `ClienteCard`
- *
- * Tarjeta interactiva para portafolio o casos de éxito.
- * Muestra imagen estática y, en hover, un video autoplay.
- *
- * @example
- * <ClienteCard
- *   imageSrc="/img/cliente.webp"
- *   videoSrc="/videos/cliente.webm"
- *   title="Cliente X"
- *   link="/portafolio/cliente-x"
- * />
- *
- * @param {string} imageSrc   Imagen de portada.
- * @param {string} videoSrc   Video que aparece en hover.
- * @param {string} alt        Texto alternativo.
- * @param {string} title      Nombre del cliente o proyecto.
- * @param {string} link       URL del proyecto.
- * @param {string} [description] Texto breve opcional.
- * @param {string} [mediaHeight="450px"] Altura del contenedor visual.
- */
 export default function ClienteCard({
   imageSrc,
   videoSrc,
@@ -38,39 +11,50 @@ export default function ClienteCard({
   description,
   mediaHeight = "450px",
 }) {
+  const videoRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    videoRef.current?.play();
+  };
+
+  const handleMouseLeave = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
   return (
     <article className="w-full group">
       <Link href={link} className="w-full">
         <div
           className="w-full overflow-hidden rounded-md bg-neutral-100"
           style={{ height: mediaHeight }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           <div className="relative h-full w-full">
             {/* Imagen */}
             <Image
-            
               src={imageSrc}
               alt={alt}
               loading="lazy"
               className="absolute inset-0 h-full w-full object-cover
                          transition-opacity duration-500 ease-in-out
                          group-hover:opacity-0"
-              style={{ willChange: "opacity" }}
             />
 
             {/* Video */}
             <video
+              ref={videoRef}
               src={videoSrc}
               muted
-              loading="lazy"
               loop
-              autoPlay
               playsInline
               preload="metadata"
               className="absolute inset-0 h-full w-full object-cover
                          opacity-0 transition-opacity duration-500 ease-in-out
                          group-hover:opacity-100"
-              style={{ willChange: "opacity" }}
             />
           </div>
         </div>

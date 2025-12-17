@@ -6,11 +6,11 @@ import iconEstrategia from "@/assets/home/estrategia_digital.webp";
 import iconRedes from "@/assets/home/redes_sociales.webp";
 
 //Video
-const disenografico = "/servicios/diseno_grafico.webm";
-const redesociales = "/servicios/redes_sociales.webm";
-const desarrolloWeb = "/servicios/desarrollo_web.webm";
-const marketingDigital = "/servicios/marketing_digital.webm";
-const produccionAudiovisual = "/servicios/produccion_audiovisual.webm";
+const disenografico = "/servicios/diseno_grafico/diseno_grafico.webm";
+const redesociales = "/servicios/redes_sociales/redes_sociales.webm";
+const desarrolloWeb = "/servicios/desarrollo_web/desarrollo_web.webm";
+const marketingDigital = "/servicios/marketing_digital/marketing_digital.webm";
+const produccionAudiovisual = "/servicios/produccion_audiovisual/produccion_audiovisual.webm";
 
 // Videos diseño grafico
 const servicio_diseno_1 = "/servicios/diseno_grafico/servicio_diseno_1.webm";
