@@ -30,7 +30,7 @@ function Services() {
         mp4SrcMobile="/servicios/servicios_principal_responsive.webm"
         hideOnMobile
         pauseWhenOffscreen
-        className="h-[60vh] md:h-[60vh] [&_video]:opacity-100 [&_video]:brightness-100"
+        className="h-[30vh] md:h-[60vh] [&_video]:opacity-100 [&_video]:brightness-100"
       />
 
       {/* ===== SECCIÓN DE INTRODUCCIÓN ===== */}
