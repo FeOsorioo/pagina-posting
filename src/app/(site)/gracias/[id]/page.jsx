@@ -11,7 +11,7 @@ import { flow } from "@data/contacto";
 
 export default function Gracias({ params }) {
   const data = flow[4];
-  const param = use(params);
+  const param = params;
   const idContact = param.id;
 
   const [sent, setSent] = useState(false);
