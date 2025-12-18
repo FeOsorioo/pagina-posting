@@ -1,23 +1,5 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/hubspot/route": "app/api/hubspot/route.js",
-  "/api/newsletter/route": "app/api/newsletter/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(site)/gracias/[id]/page": "app/(site)/gracias/[id]/page.js",
-  "/(site)/portafolio/contact-center-grupo/page": "app/(site)/portafolio/contact-center-grupo/page.js",
-  "/(site)/portafolio/delirio-eterno/page": "app/(site)/portafolio/delirio-eterno/page.js",
-  "/(site)/portafolio/unisanitas/page": "app/(site)/portafolio/unisanitas/page.js",
-  "/(site)/portafolio/cafe-finca-helena/page": "app/(site)/portafolio/cafe-finca-helena/page.js",
-  "/(site)/portafolio/universal-de-mudanzas/page": "app/(site)/portafolio/universal-de-mudanzas/page.js",
   "/(site)/page": "app/(site)/page.js",
-  "/(site)/servicios/page": "app/(site)/servicios/page.js",
-  "/(site)/nosotros/page": "app/(site)/nosotros/page.js",
-  "/(site)/blogs/page": "app/(site)/blogs/page.js",
-  "/(site)/blogs/[slug]/page": "app/(site)/blogs/[slug]/page.js",
-  "/(site)/contacto/page": "app/(site)/contacto/page.js",
-  "/(site)/servicios/diseno-grafico/page": "app/(site)/servicios/diseno-grafico/page.js",
-  "/(site)/servicios/produccion-audiovisual/page": "app/(site)/servicios/produccion-audiovisual/page.js",
-  "/(site)/servicios/redes-sociales/page": "app/(site)/servicios/redes-sociales/page.js",
-  "/(site)/servicios/marketing-digital/page": "app/(site)/servicios/marketing-digital/page.js",
-  "/(site)/servicios/desarrollo-web/page": "app/(site)/servicios/desarrollo-web/page.js"
+  "/(site)/nosotros/page": "app/(site)/nosotros/page.js"
 }

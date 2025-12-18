@@ -64,6 +64,8 @@ function FloatingHeader({ onOpenMenu, isMenuOpen }) {
     const handleScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
+          if (isMenuOpen) return;
+
           const triggerPoint = window.innerHeight * 0.1;
           const isNearTop = window.scrollY <= triggerPoint;
 
@@ -78,10 +80,20 @@ function FloatingHeader({ onOpenMenu, isMenuOpen }) {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isMenuOpen]);
 
   /* -------------------------------
-   * Animación GSAP (accesible)
+   * Forzar visible cuando el menú abre
+   * ------------------------------- */
+  useEffect(() => {
+    if (isMenuOpen) {
+      forceVisible.current = true;
+      setHidden(false);
+    }
+  }, [isMenuOpen]);
+
+  /* -------------------------------
+   * Animación GSAP
    * ------------------------------- */
   useEffect(() => {
     if (!headerRef.current) return;
@@ -101,7 +113,7 @@ function FloatingHeader({ onOpenMenu, isMenuOpen }) {
   }, [hidden]);
 
   /* -------------------------------
-   * Zona lateral accesible
+   * Zona lateral de activación
    * ------------------------------- */
   useEffect(() => {
     const zone = document.createElement("div");
@@ -109,14 +121,13 @@ function FloatingHeader({ onOpenMenu, isMenuOpen }) {
     zone.style.position = "fixed";
     zone.style.top = "0";
     zone.style.right = "0";
-    zone.style.width = "150px";
+    zone.style.width = "24px"; // 👈 no intercepta clicks
     zone.style.height = "100vh";
     zone.style.zIndex = "9999";
     zone.style.pointerEvents = "auto";
-    zone.style.cursor="pointer";
     zone.style.background = "transparent";
+    zone.style.cursor = "pointer";
 
-    /* Accesibilidad */
     zone.setAttribute("tabindex", "0");
     zone.setAttribute("aria-hidden", "true");
 
@@ -128,14 +139,15 @@ function FloatingHeader({ onOpenMenu, isMenuOpen }) {
     };
 
     const hide = () => {
+      if (isMenuOpen) return; // 👈 CLAVE
       forceVisible.current = false;
       setHidden(window.scrollY > 50);
     };
 
     zone.addEventListener("mouseenter", show);
     zone.addEventListener("focus", show);
-    headerRef.current?.addEventListener("mouseleave", hide);
     zone.addEventListener("blur", hide);
+    headerRef.current?.addEventListener("mouseleave", hide);
 
     return () => {
       zone.removeEventListener("mouseenter", show);
@@ -144,7 +156,7 @@ function FloatingHeader({ onOpenMenu, isMenuOpen }) {
       headerRef.current?.removeEventListener("mouseleave", hide);
       document.body.removeChild(zone);
     };
-  }, []);
+  }, [isMenuOpen]);
 
   /* -------------------------------
    * Render
