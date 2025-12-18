@@ -12,10 +12,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-import banner1m from "@/assets/nosotros/banner_responsive.webp";
-import banner2m from "@/assets/nosotros/banner_responsive.webp";
-import banner1 from "@/assets/nosotros/banner1.webp";
-import banner2 from "@/assets/nosotros/banner2.webp";
+const banner1m = "/nosotros/banner_responsive.webp";
+const banner2m = "/nosotros/banner_responsive.webp";
+const banner1 = "/nosotros/banner1.webp";
+const banner2 = "/nosotros/banner2.webp";
 
 /**
  * `BannerHover`

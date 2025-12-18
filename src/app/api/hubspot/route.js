@@ -13,17 +13,7 @@ export async function POST(req) {
       flowAnswers = {},
     } = body;
 
-    // 2. Imprimir TODO lo que llega
-    console.log("📩 Datos recibidos en API HubSpot:");
-    console.log({
-      nombre,
-      email,
-      telefono,
-      mensaje,
-      aceptaComunicaciones,
-      aceptaPolitica,
-      flowAnswers,
-    });
+ 
 
     const flowText = Object.entries(flowAnswers)
       .map(([step, answer]) => `Paso ${step}: ${answer}`)
@@ -117,7 +107,6 @@ export async function PATCH(req) {
       );
     }
 
-    console.log("🔧 Actualizando contacto:", contactId, properties);
 
     const hubspotRes = await fetch(
       `https://api.hubapi.com/crm/v3/objects/contacts/${contactId}`,
@@ -141,7 +130,6 @@ export async function PATCH(req) {
       );
     }
 
-    console.log("✔ Contacto actualizado:", result);
 
     return new Response(
       JSON.stringify({ success: true, result }),

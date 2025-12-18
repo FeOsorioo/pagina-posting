@@ -65,7 +65,7 @@ export default function Footer() {
               { href: "https://wa.link/zppguy", src: whatsApp, alt: "WhatsApp" },
             ].map(({ href, src, alt }) => (
               <a key={alt} href={href} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <Image src={src} alt={alt} width={36} height={36} className="h-7 w-7 sm:h-9 sm:w-9" loading="lazy" />
+                <Image src={src} alt={alt} width={36} height={36} className="h-9 w-9 sm:h-9 sm:w-9" loading="lazy" />
               </a>
             ))}
           </div>

@@ -19,7 +19,6 @@ export function useNewsletter() {
       });
 
       if (!response.ok) {
-        console.log("Newsletter response not ok:", response);
       }
 
       setStatus("success");

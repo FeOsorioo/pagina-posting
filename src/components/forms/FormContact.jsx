@@ -150,7 +150,7 @@ export default function FormContact({ handleBack, onSubmit }) {
             }
             international
             countryCallingCodeEditable={false}
-            className="text-white w-full PhoneInput"
+            className="text-white w-full  bg-black outline-none placeholder-gray-400"
           />
         </div>
 

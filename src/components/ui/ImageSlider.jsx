@@ -93,7 +93,7 @@ export default function ImageSlider({
                 alt={`Slide ${index + 1}`}
                 className={`${max_w_h} w-full object-contain`}
                 sizes={sizes}
-                placeholder="blur"
+              
                 loading="lazy"
               />
             </div>

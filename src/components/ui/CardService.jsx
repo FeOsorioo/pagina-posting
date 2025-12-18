@@ -7,7 +7,6 @@ const CardService = ({ service }) => {
      - rest → el resto del título (resaltado) */
   const [firstWord, ...rest] = service.title.split(" ");
   const restOfTitle = rest.join(" ");
-  console.log(service);
   return (
     <div
       className="grid min-h-[500px] grid-cols-1 items-center gap-8 

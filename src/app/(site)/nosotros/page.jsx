@@ -32,41 +32,42 @@ import ImageSlider from "@ui/ImageSlider";
 
 // ===== IMÁGENES =====
 
-// Slider (galería principal)
-import foto1 from "@/assets/nosotros/slider/foto1.webp";
-import foto2 from "@/assets/nosotros/slider/foto2.webp";
-import foto3 from "@/assets/nosotros/slider/foto3.webp";
+
 
 // Fondos decorativos
-import bg2 from "@/assets/background/bg9.webp";
 import bg6 from "@/assets/background/bg6.webp";
 import bg1 from "@/assets/background/bg1.webp";
 import bg4 from "@/assets/background/bg4.webp";
 
+// Slider (galería principal)
+const foto1 = "/nosotros/slider/foto1.webp";
+const foto2 = "/nosotros/slider/foto2.webp";
+const foto3 = "/nosotros/slider/foto3.webp";
+
 // Foto grupal del equipo
-import teamGroup from "@/assets/nosotros/team.webp";
+const teamGroup = "/nosotros/team.webp";
 
 // Miembros del equipo (normal y hover)
-import leidy from "@/assets/nosotros/team/leidy.webp";
-import leidyBb from "@/assets/nosotros/team/leidy-bb.webp";
-import daniel from "@/assets/nosotros/team/daniel.webp";
-import danielBb from "@/assets/nosotros/team/daniel-bb.webp";
-import lorena from "@/assets/nosotros/team/lorena.webp";
-import lorenaBb from "@/assets/nosotros/team/lorena-bb.webp";
-import valeria from "@/assets/nosotros/team/valeria.webp";
-import valeriaBb from "@/assets/nosotros/team/valeria-bb.webp";
-import andrea from "@/assets/nosotros/team/andrea.webp";
-import andreaBb from "@/assets/nosotros/team/andrea-bb.webp";
-import valentina from "@/assets/nosotros/team/valentina.webp";
-import valentinaBb from "@/assets/nosotros/team/valentina-bb.webp";
-import fe from "@/assets/nosotros/team/fe.webp";
-import feBb from "@/assets/nosotros/team/fe-bb.webp";
-import laura from "@/assets/nosotros/team/laura.webp";
-import lauraBb from "@/assets/nosotros/team/laura-bb.webp";
-import daniela from "@/assets/nosotros/team/daniela.webp";
-import danielaBb from "@/assets/nosotros/team/daniela-bb.webp";
-import fabian from "@/assets/nosotros/team/fabian.webp";
-import fabianBb from "@/assets/nosotros/team/fabian-bb.webp";
+const leidy = "/nosotros/team/leidy.webp";
+const leidyBb = "/nosotros/team/leidy-bb.webp";
+const daniel = "/nosotros/team/daniel.webp";
+const danielBb = "/nosotros/team/daniel-bb.webp";
+const lorena = "/nosotros/team/lorena.webp";
+const lorenaBb = "/nosotros/team/lorena-bb.webp";
+const valeria = "/nosotros/team/valeria.webp";
+const valeriaBb = "/nosotros/team/valeria-bb.webp";
+const andrea = "/nosotros/team/andrea.webp";
+const andreaBb = "/nosotros/team/andrea-bb.webp";
+const valentina = "/nosotros/team/valentina.webp";
+const valentinaBb = "/nosotros/team/valentina-bb.webp";
+const fe = "/nosotros/team/fe.webp";
+const feBb = "/nosotros/team/fe-bb.webp";
+const laura = "/nosotros/team/laura.webp";
+const lauraBb = "/nosotros/team/laura-bb.webp";
+const daniela = "/nosotros/team/daniela.webp";
+const danielaBb = "/nosotros/team/daniela-bb.webp";
+const fabian = "/nosotros/team/fabian.webp";
+const fabianBb = "/nosotros/team/fabian-bb.webp";
 
 /**
  * Componente principal `Nosotras`.
@@ -150,7 +151,7 @@ function Nosotras() {
             <div className="w-full">
               <ImageSlider
                 images={gallery}
-                imagesPerSlide={{ base: 3, sm:3, md: 4, lg: 1 }}
+                imagesPerSlide={{ base: 3, sm: 3, md: 4, lg: 1 }}
                 autoplay
                 delay={4000}
                 max_w_h="max-h-[20vh] lg:max-h-[60vh]"

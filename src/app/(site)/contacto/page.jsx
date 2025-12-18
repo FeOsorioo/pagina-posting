@@ -90,7 +90,6 @@ export default function Contacto() {
       return;
     }
 
-    console.log("Volver al paso anterior", step);
     setStep((s) => s - 1);
   };
 
@@ -101,8 +100,7 @@ export default function Contacto() {
   const handleFinalSubmit = async (formData) => {
 
     const payload = { ...formData, flowAnswers: answers };
-    console.log(answers)
-    console.log("Datos del formulario:", payload);
+
     const res = await fetch("/api/hubspot", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
