@@ -5,8 +5,12 @@ import Posts from "@sections/Posts";
 import banner from "@/assets/blogs/banner.webp";
 import banner_responsive from "@/assets/blogs/banner_responsive.webp";
 
+export const revalidate = 60;
+
 export default async function Blogs() {
-  const posts = await sanityFetch({ query: postsQuery });
+  const posts = await sanityFetch({
+    query: postsQuery,
+  });
 
   return (
     <>
