@@ -29,10 +29,11 @@ const builder = imageUrlBuilder(client);
 const SinglePost = async ({ post }) => {
   if (!post) return null;
 
-  const relatedPosts = await sanityFetch({
-    query: relatedPostsQuery,
-    params: { slug: post.slug?.current },
-  });
+const relatedPosts = await sanityFetch({
+  query: relatedPostsQuery,
+  params: { slug: post.slug?.current },
+  tags: ["sanity", `post:${post.slug?.current}`, "related-posts"],
+});
 
   const bannerUrl = post.bannerImage
     ? builder.image(post.bannerImage).url()
