@@ -1,4 +1,4 @@
-// File: C:\xampp\htdocs\sites\paginas\posting\src\app\api\hubspot\route.js
+// File: C:\Users\fe.osorio\Documents\Paginas\pagina-posting\src\app\api\hubspot\route.js
 import * as entry from '../../../../../src/app/api/hubspot/route.js'
 import type { NextRequest } from 'next/server.js'
 

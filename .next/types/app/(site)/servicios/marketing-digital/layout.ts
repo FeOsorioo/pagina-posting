@@ -1,4 +1,4 @@
-// File: C:\xampp\htdocs\sites\paginas\posting\src\app\(site)\servicios\marketing-digital\layout.jsx
+// File: C:\Users\fe.osorio\Documents\Paginas\pagina-posting\src\app\(site)\servicios\marketing-digital\layout.jsx
 import * as entry from '../../../../../../src/app/(site)/servicios/marketing-digital/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

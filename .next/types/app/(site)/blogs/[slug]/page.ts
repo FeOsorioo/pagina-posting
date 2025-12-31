@@ -1,4 +1,4 @@
-// File: C:\xampp\htdocs\sites\paginas\posting\src\app\(site)\blogs\[slug]\page.jsx
+// File: C:\Users\fe.osorio\Documents\Paginas\pagina-posting\src\app\(site)\blogs\[slug]\page.jsx
 import * as entry from '../../../../../../src/app/(site)/blogs/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
