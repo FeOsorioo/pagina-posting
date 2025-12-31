@@ -1,1 +1,1 @@
-{"version":1,"functions":{"/blogs":{},"/blogs/[slug]":{}}}
+{"version":1,"functions":{"/blogs/[slug]":{},"/blogs":{}}}
