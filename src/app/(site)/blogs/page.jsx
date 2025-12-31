@@ -10,6 +10,7 @@ export const revalidate = 3600;
 export default async function Blogs() {
   const posts = await sanityFetch({
     query: postsQuery,
+    tags: ["sanity", "posts"],
   });
 
   return (

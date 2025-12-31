@@ -6,10 +6,12 @@ export const revalidate = 3600;
 export const dynamicParams = true;
 
 const PostPage = async ({ params }) => {
-  const post = await sanityFetch({
-    query: postQuery,
-    params,
-  });
+const post = await sanityFetch({
+  query: postQuery,
+  params,
+  tags: ["sanity", `post:${params.slug}`],
+});
+
 
   return <SinglePost post={post} />;
 };
